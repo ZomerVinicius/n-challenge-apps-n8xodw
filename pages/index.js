@@ -1,17 +1,15 @@
 import Head from 'next/head';
 import GeorgiasChat from '../components/georgiasChat';
 
-
 export default function Home() {
   const shouldLoadGeorgiasChat = process.env.NEXT_PUBLIC_GORGIAS;
-  console.log(shouldLoadGeorgiasChat);
   return (
     <div className="container">
       {shouldLoadGeorgiasChat === 'true' && <GeorgiasChat></GeorgiasChat>}
       <Head>
         <title>Nyla Challenge: Apps</title>
       </Head>
-      
+
       <main>
         <h1 className="title">
           Nyla Challenge: <span>Apps</span>
