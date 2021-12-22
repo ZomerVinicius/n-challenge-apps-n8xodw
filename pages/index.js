@@ -1,17 +1,14 @@
 import Head from 'next/head';
-import { Helmet } from 'react-helmet';
+import GeorgiasChat from '../components/georgiasChat';
 
 export default function Home() {
   return (
     <div className="container">
+      <GeorgiasChat></GeorgiasChat>
       <Head>
         <title>Nyla Challenge: Apps</title>
       </Head>
-
-      <Helmet>
-        <script src="https://us-east1-898b.production.gorgias.chat/applications/7653"></script>
-      </Helmet>
-
+      
       <main>
         <h1 className="title">
           Nyla Challenge: <span>Apps</span>
